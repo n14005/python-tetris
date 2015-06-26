@@ -331,5 +331,6 @@ def on_key_press(key_pressed, mod):
 def update(dt):
     game.cycle()
 
+pyglet.gl.glClearColor(0, 20, 20, 255)
 pyglet.clock.schedule_interval(update, 1 / game.frame_rate)
 pyglet.app.run()
